@@ -1,42 +1,38 @@
-console.log(
-	"Witam wszystkich na pierwszej stronie! Dzięki że wyświetliliście mój kod;) !"
-);
+let buttonElement = document.querySelector(".box__button");
+let mainImage = document.querySelector(".box__circle");
+let darkModeButtonElement = document.querySelector(".dark-mode");
+let bodyElement = document.querySelector(".body");
+let articleElement = document.querySelector("article");
+let mainElement = document.querySelector(".main");
+let tableElement = document.querySelector(".table-section");
+let tableHeaderElement = document.querySelector(".table__cell--header-color");
+let tableHeaderElement2 = document.querySelector(".table__cell--header-color2");
+let tableHeaderElement3 = document.querySelector(".table__cell--header-color3");
+let tableHeaderElement4 = document.querySelector(".table__cell--header-color4");
+let themeElement = document.querySelector(".navigation__theme");
 
-let operativeButton = document.querySelector(".action_button");
-let mainImage = document.querySelector(".circle");
-let darkModeButton = document.querySelector(".dark_mode");
-let body = document.querySelector(".body");
-let article = document.querySelector("article");
-let mainContent = document.querySelector(".main_content");
-let table = document.querySelector(".table_section");
-let tableHeader = document.querySelector(".header_color");
-let tableHeader2 = document.querySelector(".header_color2");
-let tableHeader3 = document.querySelector(".header_color3");
-let tableHeader4 = document.querySelector(".header_color4");
-let themeName = document.querySelector(".theme_name");
-
-darkModeButton.addEventListener("click", () => {
-	article.classList.toggle("light_dark");
-	body.classList.toggle("dark");
-	mainContent.classList.toggle("dark");
-	tableHeader.classList.toggle("main_theme");
-	tableHeader2.classList.toggle("main_theme");
-	tableHeader3.classList.toggle("main_theme");
-	tableHeader4.classList.toggle("main_theme");
-	table.classList.toggle("light_dark");
-	if (body.classList.contains("dark")) {
-		themeName.innerHTML = "Jasny";
+darkModeButtonElement.addEventListener("click", () => {
+	articleElement.classList.toggle("light-dark");
+	bodyElement.classList.toggle("dark");
+	mainElement.classList.toggle("dark");
+	tableHeaderElement.classList.toggle("main-theme");
+	tableHeaderElement2.classList.toggle("main-theme");
+	tableHeaderElement3.classList.toggle("main-theme");
+	tableHeaderElement4.classList.toggle("main-theme");
+	tableElement.classList.toggle("light-dark");
+	if (bodyElement.classList.contains("dark")) {
+		themeElement.innerHTML = "Jasny";
 	} else {
-		themeName.innerHTML = "Ciemny";
+		themeElement.innerHTML = "Ciemny";
 	}
 });
 
-operativeButton.addEventListener("click", () => {
+buttonElement.addEventListener("click", () => {
 	if (mainImage.classList.contains("visible")) {
 		mainImage.classList.remove("visible");
-		operativeButton.innerHTML = "Usuń zdjęcie";
+		buttonElement.innerHTML = "Usuń zdjęcie";
 	} else {
 		mainImage.classList.add("visible");
-		operativeButton.innerHTML = "Pokaż zdjęcie";
+		buttonElement.innerHTML = "Pokaż zdjęcie";
 	}
 });
