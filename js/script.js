@@ -1,6 +1,21 @@
-function welcome(){
-	console.log("Witam wszystkich, którzy tu zajrzeli")
-}
+const welcome = () => {
+	console.log("Witam wszystkich, którzy tu zajrzeli!");
+};
+const onChangeBackgroundClick = () => {
+	articleElement.classList.toggle("light-dark");
+	bodyElement.classList.toggle("dark");
+	mainElement.classList.toggle("dark");
+	tableHeaderElement.classList.toggle("main-theme");
+	tableHeaderElement2.classList.toggle("main-theme");
+	tableHeaderElement3.classList.toggle("main-theme");
+	tableHeaderElement4.classList.toggle("main-theme");
+	tableElement.classList.toggle("light-dark");
+	if (bodyElement.classList.contains("dark")) {
+		themeElement.innerHTML = "Jasny";
+	} else {
+		themeElement.innerHTML = "Ciemny";
+	}
+};
 
 welcome();
 
@@ -17,21 +32,7 @@ let tableHeaderElement3 = document.querySelector(".table__cell--header-color3");
 let tableHeaderElement4 = document.querySelector(".table__cell--header-color4");
 let themeElement = document.querySelector(".navigation__theme");
 
-darkModeButtonElement.addEventListener("click", () => {
-	articleElement.classList.toggle("light-dark");
-	bodyElement.classList.toggle("dark");
-	mainElement.classList.toggle("dark");
-	tableHeaderElement.classList.toggle("main-theme");
-	tableHeaderElement2.classList.toggle("main-theme");
-	tableHeaderElement3.classList.toggle("main-theme");
-	tableHeaderElement4.classList.toggle("main-theme");
-	tableElement.classList.toggle("light-dark");
-	if (bodyElement.classList.contains("dark")) {
-		themeElement.innerHTML = "Jasny";
-	} else {
-		themeElement.innerHTML = "Ciemny";
-	}
-});
+darkModeButtonElement.addEventListener("click", onChangeBackgroundClick);
 
 buttonElement.addEventListener("click", () => {
 	if (mainImage.classList.contains("visible")) {
