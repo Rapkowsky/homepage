@@ -8,3 +8,4 @@ The first business card created for the course purpose.
 - Flexbox
 - BEM
 - Media qeries
+- Arrow function in JS
