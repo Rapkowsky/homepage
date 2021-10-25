@@ -1,3 +1,9 @@
+function welcome(){
+	console.log("Witam wszystkich, którzy tu zajrzeli")
+}
+
+welcome();
+
 let buttonElement = document.querySelector(".box__button");
 let mainImage = document.querySelector(".box__circle");
 let darkModeButtonElement = document.querySelector(".dark-mode");
