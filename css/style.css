@@ -19,8 +19,7 @@ body {
 }
 /* ---HEADER--- */
 .header {
-	background: url("https://i.postimg.cc/nzRkGNpb/bg-image-2.jpg") no-repeat
-		center;
+	background: url("https://i.postimg.cc/nzRkGNpb/bg-image-2.jpg") no-repeat center;
 	width: 100%;
 	height: 720px;
 	position: relative;
@@ -106,12 +105,7 @@ a.navigation__item:hover:after {
 	transform: scale(1);
 }
 .header__shine {
-	mask-image: linear-gradient(
-		-75deg,
-		rgba(0, 0, 0, 0.6) 30%,
-		#000 50%,
-		rgba(0, 0, 0, 0.6) 70%
-	);
+	mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
 	mask-size: 190%;
 	animation: shine 3s infinite;
 }
@@ -154,8 +148,7 @@ a.navigation__item:hover:after {
 .footer {
 	padding: 50px;
 	background-color: #fff;
-	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-		rgba(0, 0, 0, 0.05) 0px 5px 10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 	padding: 0 100px;
 	border-radius: 10px;
 	margin-bottom: 20px;
@@ -200,8 +193,7 @@ a.navigation__item:hover:after {
 
 .article__svg {
 	width: 70px;
-	filter: invert(51%) sepia(44%) saturate(639%) hue-rotate(151deg)
-		brightness(95%) contrast(90%);
+	filter: invert(51%) sepia(44%) saturate(639%) hue-rotate(151deg) brightness(95%) contrast(90%);
 }
 
 .article__icon-box {
@@ -282,23 +274,23 @@ a.navigation__item:hover:after {
 		padding: 0px;
 	}
 }
-.dark {
+.js-dark {
 	background-color: #0e141a;
 	color: #bbbbbb;
 }
-.light-dark {
+.js-light-dark {
 	background-color: #1c1b21;
 	color: #bbbbbb;
 }
-.light-dark p {
+.js-light-dark p {
 	background-color: #1c1b21;
 	color: #bbbbbb;
 }
 
-.main-theme {
+.js-main-theme {
 	background-color: #5397bb;
 }
 
-.visible {
+.js-visible {
 	display: none;
 }
