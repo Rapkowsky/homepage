@@ -1,6 +1,6 @@
 # Robert Rapkowski - first homepage
 
-![Robert](homepage/images/rr_image.png)
+![Robert](/images/rr_image.png)
 
 ## Demo
 
