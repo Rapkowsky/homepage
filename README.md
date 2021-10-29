@@ -7,5 +7,5 @@ The first business card created for the course purpose.
 ## Used methodologies
 - Flexbox
 - BEM
-- Media qeries
+- Media queries
 - Arrow function in JS
