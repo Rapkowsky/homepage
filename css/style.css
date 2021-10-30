@@ -282,10 +282,6 @@ a.navigation__item:hover:after {
 	background-color: #1c1b21;
 	color: #bbbbbb;
 }
-.js-light-dark p {
-	background-color: #1c1b21;
-	color: #bbbbbb;
-}
 
 .js-main-theme {
 	background-color: #5397bb;

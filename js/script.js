@@ -6,6 +6,7 @@
 	const onChangeBackgroundClick = () => {
 		const bodyElement = document.querySelector(".js-body");
 		const articleElement = document.querySelector(".js-article");
+		const paragraphElement = document.querySelector(".js-paragraph");
 		const mainElement = document.querySelector(".js-main");
 		const tableElement = document.querySelector(".js-table");
 		const tableHeaderElement = document.querySelector(".js-header");
@@ -22,6 +23,7 @@
 		tableHeaderElement3.classList.toggle("js-main-theme");
 		tableHeaderElement4.classList.toggle("js-main-theme");
 		tableElement.classList.toggle("js-light-dark");
+		paragraphElement.classList.toggle("js-light-dark");
 
 		if (bodyElement.classList.contains("js-dark")) {
 			themeElement.innerHTML = "Jasny";
