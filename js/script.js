@@ -6,24 +6,22 @@
 	const onChangeBackgroundClick = () => {
 		const bodyElement = document.querySelector(".js-body");
 		const articleElement = document.querySelector(".js-article");
-		const paragraphElement = document.querySelector(".js-paragraph");
+		const paragraphsElement = document.querySelectorAll(".js-paragraph");
 		const mainElement = document.querySelector(".js-main");
 		const tableElement = document.querySelector(".js-table");
-		const tableHeaderElement = document.querySelector(".js-header");
-		const tableHeaderElement2 = document.querySelector(".js-header-2");
-		const tableHeaderElement3 = document.querySelector(".js-header-3");
-		const tableHeaderElement4 = document.querySelector(".js-header-4");
+		const tableHeaderElement = document.querySelectorAll(".js-header");
 		const themeElement = document.querySelector(".navigation__theme");
 
 		articleElement.classList.toggle("js-light-dark");
 		bodyElement.classList.toggle("js-dark");
 		mainElement.classList.toggle("js-dark");
-		tableHeaderElement.classList.toggle("js-main-theme");
-		tableHeaderElement2.classList.toggle("js-main-theme");
-		tableHeaderElement3.classList.toggle("js-main-theme");
-		tableHeaderElement4.classList.toggle("js-main-theme");
 		tableElement.classList.toggle("js-light-dark");
-		paragraphElement.classList.toggle("js-light-dark");
+		paragraphsElement.forEach((paragraphs) => {
+			paragraphs.classList.toggle("js-light-dark");
+		});
+		tableHeaderElement.forEach((headers) => {
+			headers.classList.toggle("js-main-theme");
+		});
 
 		if (bodyElement.classList.contains("js-dark")) {
 			themeElement.innerHTML = "Jasny";
